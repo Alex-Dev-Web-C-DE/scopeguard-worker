@@ -1,0 +1,15 @@
+name = "scopeguard-worker"
+main = "src/index.js"
+compatibility_date = "2026-10-15"
+compatibility_flags = ["nodejs_compat"]
+
+[[kv_namespaces]]
+binding = "SCOPE_KV"
+id = "fb48c4cbf0e647d8b77eb4cca86e0d84"
+
+[[services]]
+binding = "COMPLIANCE"
+service = "compliance-engine"
+
+[triggers]
+crons = ["0 */6 * * *"]
